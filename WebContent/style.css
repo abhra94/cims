@@ -1,0 +1,324 @@
+body{
+	//background-color: lightblue;	
+	background-image: url("images/bg.jpg");
+	margin: 0px;
+	min-width: 1000px;
+
+}/*End of Body*/
+/* Status */
+div.statuscontainer{
+    background-color: transparent;
+    width:320px;
+    padding: 10px 10px;
+    margin-left: 500px;
+    margin-top: 20px;
+    border-style: dotted;
+    border-color: cyan;
+    border-radius: 10px;
+
+}
+div.statustext{
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+/* End Status*/
+/*Main Menu*/
+ul.mainmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 250px;
+    //min-width: 1000px;
+    overflow: hidden;
+    //background-color: #333;
+
+}
+
+ul.mainmenu li {
+    float: left;
+    //padding-left: 20px;   
+  
+}
+
+ul.mainmenu li a {
+    display: block;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 22px 25px;
+    text-decoration: none;   
+}
+
+ul.mainmenu li a:hover:not(.active) {
+    //background-color: #111;
+    color: #ffffb3;
+     //border-radius: 15px;
+    box-shadow: inset 0 -10px 10px -10px #ffffb3;
+}
+
+ul.mainmenu .active {
+    //background-color: #ffffff;
+    box-shadow: inset 0 -10px 10px -10px #ffffb3;
+    color: #ffffb3;
+}/*End of Main Menu*/
+
+/*Sub Menu*/
+ul.mainmenu li:hover ul.submainmenu {display: block;
+position: absolute;
+}
+ul.mainmenu li ul.submainmenu {
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  display: none;
+  margin: 0;
+  //padding: 0;
+  
+}
+ul.mainmenu li ul.submainmenu li {
+ //background: #555;
+display: block;
+ float: left;
+  
+
+}
+ul.mainmenu li ul.submainmenu li a {
+
+	display:block ;
+	color: white;
+	 border-radius: 15px;
+	 font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    text-decoration: none;  
+	  
+}
+ul.mainmenu li ul.submainmenu li:hover {
+
+	//background: #666;
+	color: #ffffb3;
+    box-shadow: inset 0 -10px 10px -7px green;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/*End of Sub Menu*/
+
+/*Reg Form*/
+div.logform{
+	background: transparent;
+	//margin:100px 400px;
+	margin-top: 100px;
+	margin-left: 400px;
+	margin-right: 400px;
+	padding: 0px;
+}
+input[type=text]{
+	width: 97%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.5;
+    font-size: 15px;
+     font-weight: bold;
+    color: black;
+    //display: inline;
+
+    
+}
+input[type=text]:focus{
+	width: 97%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: bold;
+    color: black;
+
+}
+input[type=text]:hover{
+	width: 97%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+    opacity: 0.8;   
+    
+
+}
+input[type=password]{
+	width: 97%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    opacity: 0.5;
+    font-weight: bold;
+     color: black;
+
+}
+input[type=password]:hover{
+	width: 97%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;    
+    opacity: 0.8;
+    
+
+}
+input[type=password]:focus{
+	width: 97%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: bold;
+     color: black;
+
+}
+input[type=submit]{
+	width: 97%;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px
+    
+}
+input[type=submit]:hover {
+    background-color: #3c8c40;
+    transition-duration: 0.4s;
+}
+.required{
+	margin:0;
+	padding-left: 7px;
+	display: inline-block;
+	color: red;
+	//font-style: italic;
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.formlabel{
+    display: inline;
+    color: white;
+    font-size: 1.25em;
+    color: #ffffb3;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.valuelabel{
+    display: inline;
+    color: white;
+    font-size: 1.25em;
+    
+}
+/* LINK */
+ a.linkbutn:link, a.linkbutn:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+a.linkbutn:hover, a.linkbutn:active {
+    background-color: #aa2e25;
+     font-family: Verdana, Geneva, sans-serif;
+     transition-duration: 0.4s;
+}
+/*END LINK */
+
+select.selectoption{
+	font-size: 1em;
+	opacity: 0.5;
+	padding: 5px;
+	 border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select.selectoption:hover{
+	font-size: 1em;
+	opacity: 0.8;
+	padding: 5px;
+	 border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select.selectoption:focus{
+	font-size: 1em;
+	opacity: 0.8;
+	padding: 5px;
+	 border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* End of Reg Form*/
+/*Marquee*/
+.bnews{
+	color: red;
+	width: 850px;
+	padding-top: 20px;
+	margin-left: 200px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif
+
+	
+
+}
+#bnewsbody{
+	display: inline;
+	color:  #b3e6ff;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/*Footer*/
+.footer{
+	color: #ffffb3;
+	/*position:fixed;
+	//margin: 0 150px;
+   bottom:0;
+   margin: 0 0 30px 0;
+   text-align: center;*/
+   bottom : 2px;  
+   height : 40px;  
+   margin-top : 40px;  
+   text-align: center;  
+ vertical-align: middle; 
+   position:fixed;
+   width:100%;
+
+    
+}
