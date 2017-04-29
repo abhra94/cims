@@ -7,7 +7,7 @@ The main aim of this system is to monitor and manage the detail information of t
 - _Resident Details_ (After Login)
 ![Resident Details](/Screenshots/ResidentDetails.png)
 
-- _Resident Registration_
+- _Registration_ (Resident)
 ![Resident Registration](/Screenshots/ResidentReg.png)
 
 - _Complaints Status_ (Police Account)
