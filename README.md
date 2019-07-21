@@ -1,4 +1,5 @@
 ## Online Crime Information Management System
+**Author:** Abhrajyoti Majumdar
 
 **Tools Used:** Eclipse Mars, Oracle 10g XE, Wildfly 8.x[Appserver], Google Chrome 
 
